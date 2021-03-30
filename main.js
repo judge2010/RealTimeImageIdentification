@@ -7,7 +7,7 @@ canvas.position(660,450)
 video=createCapture(VIDEO);
 video.hide();
 console.log(ml5.version);   
-classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/tPM7XJ_hO/model.json",modelloaded);
+classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/0k1cklpzQ/model.json",modelloaded);
 };
 function draw(){
 image(video,0,0,250,250) ;
@@ -22,7 +22,7 @@ if(error){
 }
 else{
     console.log(result);
-    document.getElementById("object").innerHTML= "Person -  " + result[0].label;
+    document.getElementById("object").innerHTML= "Object -  " + result[0].label;
     document.getElementById("acuracy").innerHTML= "Acuracy -  " + result[0].confidence.toFixed(3);
 };
 };
