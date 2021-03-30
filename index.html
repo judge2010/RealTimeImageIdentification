@@ -1,6 +1,7 @@
 <html>
+
 <head>
-  <title>Real Time Image Identification App</title>
+  <title>Realtime Image Identification</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -10,41 +11,28 @@
   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
 </head>
-<body>
-<center>
-  <h3 class="btn btn-primary" id="fdiv">Real Time Image Identification App
-    <hr>
-    <center>
-      <div id="sdiv" class="btn btn-default">
-        We are using Mobilenet as a Model  
-        <br>
-          <div id="tdiv" class="btn btn-warning">
-          Mobilenet model is trained for
-          more than 1.3 billion images
-          </div>
-        </div>
-    </center>
+
+<body background="background.jpg">
+
+<div id="head_div" class="btn btn-info">
+  <h1>Realtime Image Identification</h1>
+  <div id="div2" class="subheading">Model is trained for-
     <br>
-  </h3>
-  <br><br>
-  
-  <p class="btn btn-success">Object : 
-    <span id=""></span> 
-  </p>
-  
-  <br><br>
-  <p class="btn btn-success">Accuracy : 
-    <span id=""></span> 
-  </p>
-
-</center>
-
-<div class="copy_right_footer">
-<h1 id="div">Devloped By Jujhar Singh</h1>
+   <div id="last_div" class="btn btn-warning"> 
+   Mom / 
+   Dad / 
+   Me / 
+   </div>
+  </div>
 </div>
 
-<script src="main.js"></script>
+<h2 class="btn btn-primary" id="object"></h2>
+<br><br>
+<h2 class="btn btn-primary" id="acuracy"></h2>
+<h1 id="dev-by">Devloped By-Jujhar Singh</h1>
+
 </body>
 
 </html>
